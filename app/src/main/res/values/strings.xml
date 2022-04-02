@@ -9,4 +9,14 @@
     <string name="cashless">Cashless</string>
     <string name="cashless_desc">Gunakan e-wallet untuk \n transaksi tiket nonton</string>
     <string name="memulai">Memulai</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="photo">Photo</string>
+    <string name="welcome_text">Welcome \n Angga Risky</string>
+    <string name="upload_nanti">Upload Nanti</string>
+    <string name="simpan_dan_lanjutkan">Simpan Dan Lanjutkan</string>
 </resources>
