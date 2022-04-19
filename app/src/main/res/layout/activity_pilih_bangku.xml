@@ -98,18 +98,18 @@
             android:layout_height="match_parent"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:src="@drawable/shape_line_blue_grey" />
+            android:src="@drawable/ic_rectangle_empty" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/shape_line_blue_grey" />
+            android:src="@drawable/ic_rectangle_empty" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:gravity="center"
             android:text="A"
             android:textColor="@color/colorWhite" />
@@ -119,26 +119,41 @@
             android:layout_height="match_parent"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:src="@drawable/shape_line_blue_grey" />
+            android:src="@drawable/ic_rectangle_empty" />
 
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/shape_line_blue_grey" />
+            android:src="@drawable/ic_rectangle_empty" />
     </LinearLayout>
+
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawablePadding="10dp"
-        android:drawableLeft="@drawable/ic_rectangle_empty"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="24dp"
-        android:text="Empty"
+        android:drawableLeft="@drawable/ic_rectangle_booked"
+        android:drawablePadding="10dp"
+        android:text="Booked"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:drawableLeft="@drawable/ic_rectangle_empty"
+        android:drawablePadding="10dp"
+        android:text="Empty"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toEndOf="@+id/textView18" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
