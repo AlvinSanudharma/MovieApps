@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.movieapps.R
-import com.example.movieapps.sign.SignInActivity
+import com.example.movieapps.sign.signin.SignInActivity
 import kotlinx.android.synthetic.main.activity_on_boarding_three.*
 
 class OnBoardingThreeActivity : AppCompatActivity() {

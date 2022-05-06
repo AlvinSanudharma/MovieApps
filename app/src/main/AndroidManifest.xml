@@ -30,7 +30,7 @@
             android:name=".onboarding.OnBoardingThreeActivity"
             android:exported="false" />
         <activity
-            android:name=".sign.SignInActivity"
+            android:name=".sign.signin.SignInActivity"
             android:exported="false" />
         <activity
             android:name=".sign.SignUpActivity"
