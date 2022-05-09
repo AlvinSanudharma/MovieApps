@@ -33,7 +33,7 @@
             android:name=".sign.signin.SignInActivity"
             android:exported="false" />
         <activity
-            android:name=".sign.SignUpActivity"
+            android:name=".sign.signup.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".sign.SignUpPhotoActivity"

@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.movieapps.HomeActivity
 import com.example.movieapps.R
-import com.example.movieapps.sign.SignUpActivity
+import com.example.movieapps.sign.signup.SignUpActivity
 import com.example.movieapps.utils.Preferences
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_sign_in.*
