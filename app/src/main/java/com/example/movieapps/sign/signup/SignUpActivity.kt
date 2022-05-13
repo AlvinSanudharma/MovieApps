@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.movieapps.R
-import com.example.movieapps.sign.SignUpPhotoActivity
 import com.example.movieapps.sign.signin.User
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_sign_up.*
