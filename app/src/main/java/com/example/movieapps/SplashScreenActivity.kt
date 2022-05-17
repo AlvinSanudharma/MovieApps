@@ -12,6 +12,11 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         var handler = Handler()
+
+        /*
+        Menahan activity selama 5 detik, setelah 5 detik
+        jalankan intent perpindahan ke halaman on boarding
+         */
         handler.postDelayed({
             var intent = Intent(this@SplashScreenActivity, OnBoardingOneActivity::class.java)
             startActivity(intent)
