@@ -13,7 +13,7 @@ import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.example.movieapps.HomeActivity
+import com.example.movieapps.home.HomeActivity
 import com.example.movieapps.R
 import com.example.movieapps.utils.Preferences
 import com.google.firebase.storage.FirebaseStorage

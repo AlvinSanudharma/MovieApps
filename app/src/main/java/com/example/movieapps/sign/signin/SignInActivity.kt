@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.movieapps.HomeActivity
+import com.example.movieapps.home.HomeActivity
 import com.example.movieapps.R
 import com.example.movieapps.sign.signup.SignUpActivity
 import com.example.movieapps.utils.Preferences
