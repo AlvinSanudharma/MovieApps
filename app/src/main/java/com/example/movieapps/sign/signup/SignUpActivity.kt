@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.movieapps.R
 import com.example.movieapps.sign.signin.User
+import com.example.movieapps.utils.Preferences
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
@@ -19,6 +20,8 @@ class SignUpActivity : AppCompatActivity() {
     lateinit var mDatabaseInstance: FirebaseDatabase
     lateinit var mDatabase: DatabaseReference
 
+    private lateinit var preferences: Preferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
@@ -26,6 +29,8 @@ class SignUpActivity : AppCompatActivity() {
         mDatabaseInstance = FirebaseDatabase.getInstance()
         mDatabase = FirebaseDatabase.getInstance().getReference()
         mDatabaseReference = mDatabaseInstance.getReference("User")
+
+        preferences = Preferences(this)
 
         btn_lanjutkan.setOnClickListener {
             sUsername = et_username.text.toString()
@@ -72,10 +77,17 @@ class SignUpActivity : AppCompatActivity() {
                 if (user == null) {
                     mDatabaseReference.child(sUsername).setValue(data)
 
-                    var goSignUpPhotoScreen = Intent(this@SignUpActivity,
-                        SignUpPhotoActivity::class.java).putExtra("nama", data.nama)
+                    preferences.setValues("nama", data.nama.toString())
+                    preferences.setValues("user", data.username.toString())
+                    preferences.setValues("saldo", "")
+                    preferences.setValues("url", "")
+                    preferences.setValues("email", data.email.toString())
+                    preferences.setValues("status", "1")
 
-                    startActivity(goSignUpPhotoScreen)
+                    var intent = Intent(this@SignUpActivity,
+                        SignUpPhotoActivity::class.java).putExtra("data", data)
+
+                    startActivity(intent)
                 } else {
                     Toast.makeText(this@SignUpActivity, "User telah terdaftar",
                         Toast.LENGTH_LONG).show()

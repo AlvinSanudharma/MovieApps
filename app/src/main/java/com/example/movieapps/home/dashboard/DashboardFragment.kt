@@ -53,8 +53,8 @@ class DashboardFragment : Fragment() {
 
         tv_nama.setText(preferences.getValues("nama"))
 
-        if (!preferences.getValues("saldo").equals("")) {
-             currency(preferences.getValues("saldo")!!.toDouble(), tv_saldo)
+        if (!preferences.getValues("saldo").equals("")){
+            currency(preferences.getValues("saldo")!!.toDouble(), tv_saldo)
         }
 
         Glide.with(this)
@@ -99,8 +99,8 @@ class DashboardFragment : Fragment() {
 
     private fun currency(harga: Double, textView: TextView) {
         val localID = Locale("in", "ID")
-        val format = NumberFormat.getCurrencyInstance(localID)
+        val formatRupiah = NumberFormat.getCurrencyInstance(localID)
 
-        textView.setText(format.format(harga))
+        textView.setText(formatRupiah.format(harga as Double))
     }
 }
