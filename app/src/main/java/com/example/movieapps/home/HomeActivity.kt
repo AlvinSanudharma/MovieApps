@@ -5,10 +5,10 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.example.movieapps.R
+import com.example.movieapps.home.dashboard.DashboardFragment
 import kotlinx.android.synthetic.main.activity_home.iv_menu1
 import kotlinx.android.synthetic.main.activity_home.iv_menu2
 import kotlinx.android.synthetic.main.activity_home.iv_menu3
-import kotlinx.android.synthetic.main.activity_home.layout_frame
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
