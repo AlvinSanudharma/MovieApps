@@ -70,7 +70,7 @@ class SignUpActivity : AppCompatActivity() {
     }
 
     private fun checkingUsername(sUsername: String, data: User) {
-        mDatabaseReference.child(sUsername).addValueEventListener(object : ValueEventListener {
+        mDatabaseReference.child(sUsername).addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshop: DataSnapshot) {
                 var user = dataSnapshop.getValue(User::class.java)
 
