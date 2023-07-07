@@ -12,23 +12,29 @@
     <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
     <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <uses-feature android:name="android.hardware.camera"
+    <uses-feature
+        android:name="android.hardware.camera"
         android:required="true" />
 
     <application
-        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieApps.noActionBar">
+        <activity
+            android:name=".checkout.CheckoutSuccessActivity"
+            android:exported="false" />
         <activity
             android:name=".DetailActivity"
             android:exported="false" />
         <activity
             android:name=".home.HomeActivity"
             android:exported="false" />
+        <activity android:name=".checkout.PilihBangkuActivity" />
+        <activity android:name=".checkout.CheckoutActivity" />
         <activity
             android:name=".onboarding.OnBoardingOneActivity"
             android:exported="false" />
@@ -56,6 +62,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
