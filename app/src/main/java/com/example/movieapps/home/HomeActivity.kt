@@ -6,6 +6,7 @@ import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.example.movieapps.R
 import com.example.movieapps.home.dashboard.DashboardFragment
+import com.example.movieapps.home.tiket.TiketFragment
 import kotlinx.android.synthetic.main.activity_home.iv_menu1
 import kotlinx.android.synthetic.main.activity_home.iv_menu2
 import kotlinx.android.synthetic.main.activity_home.iv_menu3

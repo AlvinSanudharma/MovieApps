@@ -25,6 +25,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieApps.noActionBar">
         <activity
+            android:name=".home.tiket.TiketActivity"
+            android:exported="false" />
+        <activity
             android:name=".checkout.CheckoutSuccessActivity"
             android:exported="false" />
         <activity
